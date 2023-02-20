@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/contact-page.css" />
+    <title>Contacts</title>
+  </head>
+  <body>
+    <nav class="contacts__navigation">
+      <h1 class="contacts__navigation__title">
+        <a class="title-link" href="#">StarScape Studios</a>
+      </h1>
+      <ul class="contacts__navigation__list">
+        <li><a class="list-link" href="#">About Us</a></li>
+        <li><a class="list-link" href="#">Gallery</a></li>
+        <li><a class="list-link list-link-active" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="main__contact">
+        <h2 class="main__contact__title">Contact</h2>
+        <p class="main__contact__text">
+          StarScape Studios is represented by Sundsgården Folkhögskola
+        </p>
+        <p class="main__contact__text">
+          Email: info@starscapestudios.com
+        </p>
+        <p class="main__contact__text">
+            Phone: 123-456-7890
+          </p>
+      </div>
+      <form class="main__form" autocomplete="off">
+        <div class="main__form-text">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="input-field"
+            placeholder="First Name"
+          />
+
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            class="input-field"
+            placeholder="Last Name"
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-field"
+            placeholder="Email"
+            required
+            autofocus
+          />
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            class="input-field"
+            placeholder="Phone"
+            required
+          />
+          <textarea
+            type="text"
+            rows="6"
+            cols="50"
+            name="comment"
+            form="usrform"
+            class="txt-area"
+            placeholder="Leave us a message..."
+          ></textarea>
+        </div>
+        <div class="main__btn">
+          
+            <button type="submit" class="main__btn-btn"><a class="main__btn-link" href="#">SUBMIT</a></button>
+        
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <hr class="footer-line" />
+      <div class="footer__social">
+        <a class="footer__social-fb-link" href="#"><img
+          class="footer__social-fb"
+          src="../images/Facebook.svg"
+          alt="Facebook"
+        /></a> 
+        <a class="footer__social-insta-link" href="#">
+        <img
+          class="footer__social-insta"
+          src="../images/Instagram.svg"
+          alt="Instagram"
+        />
+    </a>
+      </div>
+    </footer>
+  </body>
+</html>
